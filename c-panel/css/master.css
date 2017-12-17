@@ -1,0 +1,939 @@
+/*normaliser*/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+body {
+	margin: 0
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block
+}
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline
+}
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+[hidden], template {
+	display: none
+}
+a {
+	background: 0 0
+}
+a:active, a:hover {
+	outline: 0
+}
+abbr[title] {
+	border-bottom: 1px dotted
+}
+b, strong {
+	font-weight: 700
+}
+dfn {
+	font-style: italic
+}
+h1 {
+	font-size: 2em;
+	margin: .67em 0
+}
+mark {
+	background: #ff0;
+	color: #000
+}
+small {
+	font-size: 80%
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+sup {
+	top: -.5em
+}
+sub {
+	bottom: -.25em
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+figure {
+	margin: 1em 40px
+}
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0
+}
+pre {
+	overflow: auto
+}
+code, kbd, pre, samp {
+	font-family: monospace, monospace;
+	font-size: 1em
+}
+button, input, optgroup, select, textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0
+}
+button {
+	overflow: visible
+}
+button, select {
+	text-transform: none
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+button[disabled], html input[disabled] {
+	cursor: default
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+border:0;
+padding:0
+}
+input {
+	line-height: normal
+}
+input[type=checkbox], input[type=radio] {
+	box-sizing: border-box;
+	padding: 0
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+height:auto
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+-webkit-appearance:none
+}
+fieldset {
+	border: 1px solid silver;
+	margin: 0 2px;
+	padding: .35em .625em .75em
+}
+legend {
+	border: 0;
+	padding: 0
+}
+textarea {
+	overflow: auto
+}
+optgroup {
+	font-weight: 700
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+td, th {
+	padding: 0
+}
+input {
+	border-radius: 0
+}
+a:hover, a:focus {
+	text-decoration: none
+}
+/*eo normaliser*/
+/*common css*/
+body {
+	background-color: #f4f5f9;
+	font-family: arial
+}
+.sprite {
+	background-image: url(../img/sprite.png);
+	display: inline-block
+}
+.sprite1 {
+	background-image: url(../img/sprite1.png);
+	display: inline-block
+}
+.sprite2 {
+	background-image: url(../img/small-sprite.png);
+	display: inline-block
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0
+}
+ul {
+	padding-left: 0
+}
+ul li {
+	list-style: none
+}
+aside {
+	background-color: #d3b400;
+	padding: 20px 0 10px
+}
+aside ul li a {
+	display: block;
+	width: 100%;
+	color: #fff;
+	font-weight: bold;
+	padding: 10px 18px 7px
+}
+aside ul li a:hover, aside ul li a:focus {
+	color: #fff
+}
+aside ul li a.active {
+	background-color: #d3b400
+}
+aside ul li a:hover {
+	background-color: #7F8101;
+	text-decoration: none;
+	color: #fff
+}
+aside .sprite {
+	width: 32px;
+	height: 32px
+}
+aside .sprite1 {
+	width: 32px;
+	height: 32px
+}
+.sprite.pulse { background-position: 0 0	}
+.sprite.doctor {	background-position: 0 -33px	}
+.sprite.specialities {	background-position: 0 -66px	}
+.sprite.welfare {	background-position: 0 -99px	}
+.sprite.stories {	background-position: 0 -132px	}
+.sprite.announcements {	background-position: 0 -165px	}
+.sprite.events {	background-position: 0 -198px	}
+.sprite.conferences {	background-position: 0 -231px	}
+.sprite.campaigns {	background-position: 0 -264px	}
+.sprite1.sub-ex {	background-position: 0 -99px	}
+.sprite1.blog {	background-position: 0 -132px	}
+.sprite1.appointment {	background-position: 0 -66px	}
+.sprite1.checkup {	background-position: 0 -0	}
+.sprite1.econsult {	background-position: 0 -165px	}
+.sprite1.contact {	background-position: 0 -363px	}
+.sprite1.enquiry {	background-position: 0 -297px	}
+.sprite1.career {	background-position: 0 -330px	}
+.sprite1.download {	background-position: 0 -198px	}
+.navbar {
+	border: 1px solid transparent;
+	margin-bottom: 33px
+}
+.text-holder {
+	bottom: 11px;
+	left: 12px;
+	position: relative
+}
+.sprite.right-arrow {
+	background-position: 0 -297px;
+	float: right;
+	height: 7px;
+	position: relative;
+	right: -5px;
+	top: 13px;
+	width: 17px
+}
+.padding-0 {
+	padding: 0
+}
+.padding-lft0 {
+	padding-left: 0px
+}
+.padding-rgt0 {
+	padding-right: 0px
+}
+.pad-4 {
+	padding: 0 8px
+}
+.margtp-26 {
+	margin-top: 26px
+}
+/*eo common css*/
+/*login*/
+.login-holder {
+	margin: 130px auto;
+}
+.login {
+	background-color: #fff;
+	padding: 38px 47px;
+	border: 1px solid #e1e2e7;
+	width: 435px;
+	margin: 35px auto 0
+}
+.login h3 {
+	color: #000;
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 30px
+}
+.login input {
+	border-color: #dfdfdf;
+	border-radius: 1px;
+	height: 49px;
+	margin-bottom: 15px;
+	padding-left: 16px
+}
+.login .form-control::-moz-placeholder {
+ color: #949494;
+ font-family: arial;
+ text-transform: capitalize;
+ font-size: 12px
+}
+.login .form-control::-webkit-input-placeholder {
+ color: #949494;
+ font-family: arial;
+ text-transform: capitalize;
+ font-size: 12px
+}
+.login select.form-control {
+	color: #949494;
+	font-family: arial;
+	text-transform: capitalize;
+	height: 49px;
+	padding: 14px 12px
+}
+.sprite.caret-custom {
+	background-position: 0 0px;
+	width: 11px;
+	height: 6px
+}
+
+.login a:hover {
+	background-color: #ea6674;
+	text-decoration: none
+}
+/*eo login*/
+/*Add Centres of Excellence*/
+header.custom-head {
+	background-color: #fff;
+	min-height: 116px;
+	position: relative
+}
+.custom-head .bs-navbar-collapse {
+	padding-top: 40px
+}
+.custom-head .navbar-nav > li > a {
+	background-color: #fff;
+	margin-left: 21px;
+	padding: 3px 15px 4px 11px;
+	border: 1px solid #e1e2e7;
+	border-radius: 2px
+}
+.custom-head .nav .open>a, .custom-head .nav .open>a:hover, .custom-head .nav .open>a:focus {
+	background-color: #fff;
+	border-color: #e1e2e7;
+}
+.custom-head .caret {
+	color: #000
+}
+.custom-head ul.nav li h4 {
+	font-size: 16px;
+	color: #414141;
+	padding-top: 16px
+}
+.custom-head .dropdown {
+	margin-top: 9px
+}
+.custom-head .dropdown-menu {
+	min-width: 92px;
+	top: 30px;
+	border-color: #e1e2e7;
+	font-size: 12px;
+	font-family: arial;
+	color: #000
+}
+.custom-head .dropdown-menu>li>a {
+	font-weight: normal;
+	font-weight: 600;
+}
+.custom-head .dropdown-menu>li>a:hover, .custom-head .dropdown-menu>li>a:focus {
+	background-color: #eaebef
+}
+.right-sec {
+	background-color: #fff;
+	padding: 40px;
+	float: left;
+	margin-bottom: 58px;
+	width: 100%
+}
+.right-sec h3 {
+	color: #000;
+	font-weight: bold;
+	font-size: 26px;
+	margin-bottom: 36px
+}
+.add-center > li {
+	float: left;
+	position: relative
+}
+ul.add-center a {
+	padding: 56px 151px 0 42px;
+	background-color: #3daf90;
+	display: block;
+	width: 342px;
+	height: 158px;
+	border-radius: 2px;
+	text-align: left;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 23px;
+	margin-right: 15px;
+}
+ul.add-center a.last {
+	padding: 56px 125px 0 42px;
+	margin-right: 0
+}
+.sprite.right-arrow-big {
+	background-position: 0 -304px;
+	height: 18px;
+	position: absolute;
+	right: 43px;
+	top: 69px;
+	width: 45px;
+}
+/*eo Add Centres of Excellence*/
+/*add to doctor*/
+
+.right-sec .form-inline .form-control {
+	border-radius: 0;
+	display: inline-block;
+	height: 46px;
+	vertical-align: middle;
+	width: 386px;
+	margin-bottom: 18px;
+	margin-right: 10px
+}
+.right-sec .form-inline .form-control::-moz-placeholder {
+ color:#949494;
+ font-weight: normal;
+ font-size: 12px
+}
+.right-sec .form-inline .form-control::-webkit-input-placeholder {
+ color:#949494;
+ font-weight: normal;
+ font-size: 12px
+}
+.right-sec select.form-control {
+	color: #949494;
+	border-radius: 0;
+	width: 237px
+}
+.right-sec select.form-control.custom-ht {
+	padding: 14px 8px 14px
+}
+.add-more {
+	background-color: #d1d1d1;
+	border-radius: 2px;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 17px;
+	padding: 10px 20px;
+	text-align: center;
+}
+.add-more .sprite {
+	background-position: 0 -325px;
+	display: inline-block;
+	height: 8px;
+	margin-right: 7px;
+	width: 9px
+}
+.add-more:hover, .add-more:focus {
+	color: #000
+}
+.right-sec h5 {
+	font-weight: bold;
+	color: #000;
+	font-size: 14px;
+}
+.browse a {
+	border: 1px solid #d1d1d1;
+	border-radius: 2px;
+	color: #000;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 17px;
+	padding: 10px 20px;
+	text-align: center;
+	cursor: pointer;
+	position: relative;
+	margin-right: 20px
+}
+.browse input#file_browse {
+	cursor: pointer;
+	display: inline-block;
+	height: 38px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 18px;
+	width: 85px
+}
+.browse {
+	margin-top: 24px
+}
+.description h5 {
+	margin: 15px 0
+}
+.description textarea.form-control {
+	border-radius: 0px !important;
+	resize: vertical;
+	min-height: 156px;
+	display: block;
+	float: left
+}
+a.save, a.save-publish {
+	padding: 9px 31px;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 3px;
+	font-size: 16px;
+	display: inline-block;
+	margin-top: 20px;
+	text-align: center
+}
+a.save {
+	background-color: #7cac54;
+	margin-right: 14px
+}
+a.save:hover, a.save:focus {
+	background-color: #a8dd7c
+}
+a.save-publish {
+	background-color: #da5967
+}
+a.save-publish:hover, a.save-publish:focus {
+	background-color: #f46474
+}
+/*eo add to doctor*/
+/* add specialities*/
+.right-sec.specialities > .form-inline .form-control {
+	width: 100%
+}
+.right-sec.specialities .browse h5 {
+	margin-bottom: 12px
+}
+.description-packed .description h5 {
+	margin: 20px 0 15px
+}
+.description-packed {
+	padding: 30px 0 20px
+}
+.specialities-packed {
+	border-bottom: 1px solid #ebebea;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.specialities-packed h3 {
+	margin: 10px 0 15px
+}
+.right-sec.specialities .specialities-packed .form-control {
+	width: 240px
+}
+.form-control.priority {
+	width: 145px !important;
+	padding: 14px 8px;
+}
+/*eo add specialities*/
+/*welcome-admin*/
+.welcome-holder {
+	padding: 20px;
+	width: 100%;
+	background-color: #fff
+}
+.welcome-holder h3 {
+	text-align: center
+}
+ul.choose {
+	text-align: center
+}
+ul.choose li {
+	display: inline-block
+}
+ul.choose li a {
+	background-color: #d3b400;
+	width: 165px;
+	height: 165px;
+	float: left;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 12px;
+	margin: 20px 23px 10px 0
+}
+ul.choose li a.pulse-big {
+	padding: 60px 29px
+}
+.choose a .sprite {
+	display: block;
+	position: relative
+}
+a.pulse-big .sprite {
+	background-position: 0 -336px;
+	height: 41px;
+	left: 24px;
+	width: 61px;
+	bottom: 20px
+}
+ul.choose li a.doctor-big {
+	padding: 48px 29px
+}
+a.doctor-big .sprite {
+	background-position: 0 -383px;
+	bottom: 12px;
+	height: 58px;
+	left: 30px;
+	width: 45px
+}
+ul.choose li a.specialities-big {
+	padding: 58px 29px
+}
+a.specialities-big .sprite {
+	background-position: 0 -441px;
+	bottom: 17px;
+	height: 48px;
+	left: 30px;
+	width: 58px
+}
+ul.choose li a.Social-big {
+	padding: 46px 29px
+}
+a.Social-big .sprite {
+	background-position: 0 -490px;
+	bottom: 13px;
+	height: 61px;
+	left: 30px;
+	width: 50px
+}
+ul.choose li a.social-big {
+	padding: 45px 29px
+}
+a.social-big .sprite {
+	background-position: 0 -490px;
+	bottom: 13px;
+	height: 61px;
+	left: 30px;
+	width: 50px
+}
+ul.choose li a.stories-big {
+	padding: 37px 29px
+}
+a.stories-big .sprite {
+	background-position: 0 -554px;
+	bottom: 9px;
+	height: 71px;
+	left: 30px;
+	width: 41px
+}
+ul.choose li a.announcements-big {
+	padding: 43px 29px;
+}
+a.announcements-big .sprite {
+	background-position: 0 -627px;
+	bottom: 12px;
+	height: 65px;
+	left: 30px;
+	width: 61px
+}
+ul.choose li a.events-big {
+	padding: 54px 27px
+}
+a.events-big .sprite {
+	background-position: 0 -698px;
+	bottom: 12px;
+	height: 51px;
+	left: 29px;
+	width: 53px
+}
+ul.choose li a.conferences-big {
+	padding: 54px 12px
+}
+a.conferences-big .sprite {
+	background-position: 0 -752px;
+	bottom: 12px;
+	height: 51px;
+	left: 46px;
+	width: 55px
+}
+ul.choose li a.campaigns-big {
+	padding: 48px 12px
+}
+a.campaigns-big .sprite {
+	background-position: 0px -807px;
+	bottom: 12px;
+	height: 58px;
+	left: 46px;
+	width: 57px
+}
+/*eo welcome-admin*/
+/*live stories*/
+.right-sec h5 {
+	margin-bottom: 16px
+}
+/*eo live stories*/
+/*appoinment*/
+.table-holder {
+	background-color: #fff;
+	padding: 44px 45px
+}
+.table-holder td {
+	padding: 14px 13px 13px 0 !important
+}
+.table-holder th {
+	padding-left: 0px !important
+}
+.table-holder td {
+	padding-left: 0px !important
+}
+td.button-holder {
+	padding-top: 0px !important
+}
+.button-holder a {
+	background-color: #d3b400;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 10px;
+	padding: 8px 20px;
+}
+.button-holder a:hover {
+	background-color: rgb(218,89,103)
+}
+.custom-modal-1 .modal-content {
+	padding: 46px;
+}
+.custom-modal-1 h1 {
+	text-align: left;
+	padding-bottom: 20px;
+	font-size: 20px
+}
+.custom-modal-1 .modal-content h6 {
+	font-size: 14px;
+	font-weight: 600
+}
+/********************* for checkbox *********************/
+.checkbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: normal;
+	padding: 0;
+	margin: 0;
+	color: #666666;
+}
+input[type=checkbox].css-checkbox {
+	display: none !important;
+}
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left: 28px;
+	height: 22px;
+	display: inline-block;
+	line-height: 21px;
+	background-repeat: no-repeat;
+	font-size: 13px;
+	vertical-align: middle;
+	cursor: default;
+	margin-right: 18px;
+}
+input[type=checkbox].css-checkbox.checked + label.css-label {
+	background-position: 0 -44px;
+}
+input[type=checkbox].css-checkbox.un-checked + label.css-label {
+	background-position: 0 0;
+}
+.css-label {
+	background-image: url(../img/blue.png)
+}
+/********
+************* for checkbox *********************/
+
+/*eo appoinment*/
+.form-inline.width-full .form-group{
+	display: block 	
+}
+.selection .checkbox{
+	margin-top: 20px;
+	margin-left: 10px
+}
+.one{
+	display: none
+}
+.table td img {
+    width: 20%
+}
+.margtp-30{
+	margin-top: 30px
+}
+.alert-custom {
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+    color: #3C763D;
+    left: 45%;
+    position: absolute;
+    top: 6px;
+	text-transform: capitalize
+	}
+.close-alert{
+	color: #000;
+	font-size: 16px;
+	margin-left: 10px;
+	cursor: pointer
+	
+
+}
+.close-alert:hover{
+	color: red
+}
+
+a.sub-ex .sprite {
+    background-position: 0 -926px;
+    bottom: 20px;
+    height: 41px;
+    left: 24px;
+    width: 61px;
+}
+ul.choose li a.sub-ex , ul.choose li a.blog  {
+    padding: 60px 29px;
+}
+
+a.blog .sprite {
+    background-position: 0 -868px;
+    bottom: 20px;
+    height: 56px;
+    left: 24px;
+    width: 61px;
+}
+
+.date-pic-img {
+    position: absolute;
+    right: 24px;
+    top: 30px;
+}
+
+.date-tip-img {
+    position: absolute;
+    right: 14px;
+    top: 37px;
+}
+
+/*lms*/
+.lms aside ul{text-align: center;}
+.lms aside ul li{display: inline-block;}
+.lms aside ul li a span{display:block; margin: 0 auto;}
+.lms aside ul li a .text-holder{left: auto;bottom: auto;}
+.lms aside ul li a .right-arrow{display: none;}
+/*lms*/
+.download-all .glyphicon-save{margin-right: 10px;}
+.download-all a:hover{background-color: #1D8569;}
+
+.choose a .sprite1{position: relative;display: block;}
+
+a.appointment-big .sprite1 {
+	background-position: 0 -448px;
+    bottom: 12px;
+    height: 47px;
+    width: 45px;
+    display: block;
+    margin: 0 auto;
+}
+ul.choose li a.appointment-big {
+    padding: 50px 29px;
+}
+a.econsult-big .sprite1 {
+	background-position: 0 -538px;
+    bottom: 12px;
+    display: block;
+    height: 37px;
+    margin: 0 auto;
+    width: 53px;
+}
+ul.choose li a.econsult-big {
+    padding: 51px 29px;
+}
+a.check-up-big .sprite1 {
+	background-position: 0 -495px;
+    bottom: 12px;
+    display: block;
+    height: 45px;
+    margin: 0 auto;
+    width: 50px;
+}
+ul.choose li a.check-up-big {
+    padding: 50px 29px;
+}
+a.career-big .sprite1 {
+	background-position: 0 -660px;
+    bottom: 12px;
+    display: block;
+    height: 42px;
+    margin: 0 auto;
+    width: 46px;
+}
+ul.choose li a.career-big {
+    padding: 52px 29px
+}
+a.contact-big .sprite1 {
+	background-position: 0 -578px;
+    bottom: 12px;
+    display: block;
+    height: 45px;
+    margin: 0 auto;
+    width: 40px;
+}
+ul.choose li a.contact-big {
+    padding: 54px 29px;
+}
+a.enquiry-big .sprite1 {
+	background-position: 0 -625px;
+    bottom: 12px;
+    display: block;
+    height: 34px;
+    margin: 0 auto;
+    width: 47px;
+}
+ul.choose li a.enquiry-big {
+    padding: 56px 29px
+}
+a.download-big .sprite1 {
+	background-position: 0 -398px;
+    bottom: 12px;
+    display: block;
+    height: 48px;
+    margin: 0 auto;
+    width: 44px;
+}
+ul.choose li a.download-big { padding: 55px 29px}
+.pad-btm-25{padding-bottom: 25px;	}
+.button-holder .down_link { display: none;}
+.career-list-container.clearfix {
+    margin: 0 auto;
+    max-width: 700px;
+}
+.pad-rt-0{padding-right: 0;}
+.pad-lft-0{padding-left: 0}
+.radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline{margin-left: 0;}
+.radio-inline, .checkbox-inline{display: block;}
+
+/*bootstrap multi select css*/
+span.hide-native-select{position:relative}span.hide-native-select select{border:0!important;clip:rect(0 0 0 0)!important;height:1px!important;margin:-1px -1px -1px -3px!important;overflow:hidden!important;padding:0!important;position:absolute!important;width:1px!important;left:50%;top:30px}.multiselect-container{position:absolute;list-style-type:none;margin:0;padding:0}.multiselect-container .input-group{margin:5px}.multiselect-container>li{padding:0}.multiselect-container>li>a.multiselect-all label{font-weight:700}.multiselect-container>li.multiselect-group label{margin:0;padding:3px 20px 3px 20px;height:100%;font-weight:700}.multiselect-container>li.multiselect-group-clickable label{cursor:pointer}.multiselect-container>li>a{padding:0}.multiselect-container>li>a>label{margin:0;height:100%;cursor:pointer;font-weight:400;padding:3px 20px 3px 40px}.multiselect-container>li>a>label.radio,.multiselect-container>li>a>label.checkbox{margin:0}.multiselect-container>li>a>label>input[type=checkbox]{margin-bottom:5px}.btn-group>.btn-group:nth-child(2)>.multiselect.btn{border-top-left-radius:4px;border-bottom-left-radius:4px}.form-inline .multiselect-container label.checkbox,.form-inline .multiselect-container label.radio{padding:3px 20px 3px 40px}.form-inline .multiselect-container li a label.checkbox input[type=checkbox],.form-inline .multiselect-container li a label.radio input[type=radio]{margin-left:-20px;margin-right:0}
+/*bootstrap multi select css ends*/
+
+
+
+.key-highlight { margin-bottom: 20px;}
+.browse-banner-image-inner img{ max-width: 100%;}
+.browse-banner-image-inner a{ margin-bottom: 15px;}
+.txt-padding{padding: 15px 0;}
+
+

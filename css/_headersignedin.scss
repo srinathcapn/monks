@@ -1,0 +1,139 @@
+.profile-pic{
+    height: 39px;
+    border-radius: 2px;
+    @media screen and (max-width: 767px){
+        height: 33px;
+    }
+}
+.header-one .navbar li a.call-btn {
+    margin:0px;
+    margin-right: 8px;
+}
+.header-one{
+    .navbar {
+        .dialogue-box{
+            width: auto;
+            padding:0px;
+            height: auto;
+            .header-1-dropdown{
+                li{
+                    text-align: left;         
+                    list-style:none;
+                    a{
+                        border-radius: 0px;
+                        border: 1px solid #dedede;
+                        border-top: none;
+                        display: block;
+                        padding:15px 20px;
+                        color: #798a95;
+                        &:hover{
+                            background-color: #f6f8f9;
+                        }
+                        &.brdr1{
+                            border-top-left-radius: 4px;
+                            border-top-right-radius: 4px;
+                        }
+                        &.brdr2{
+                            border-bottom-left-radius: 4px;
+                            border-bottom-right-radius: 4px;
+                        }
+                    }
+                }
+            }
+            p{
+                margin:0px;
+                &.doubt{
+                    padding: 15px 20px;
+                }
+                &.bold{
+                    padding: 15px 20px;
+                }
+            }
+        }  
+        .logout-div{
+            left: -108px;
+            @media screen and (max-width: 767px){
+                left: -128px;
+            }
+            .dialogue-box{
+                width: 166px;
+                @media screen and (max-width: 767px){
+                    .triangle{
+                        right: 13px;
+                    }
+                }
+            }
+        }     
+        .notification-div{
+            width: 440px;
+            left: -379px;
+            @media screen and (max-width: 767px){
+                width: 300px;
+                left: -210px;
+                top: 46px;
+                .dialogue-box .triangle{
+                    right: 66px;
+                }
+            }
+            .header-1-dropdown{
+                a{
+
+                    @media screen and (max-width: 767px){
+                        padding: 10px !important;
+                    }
+                    text-transform: initial;
+                    img{
+                        margin-right: 20px;
+                        height: 50px;
+                        @media screen and (max-width: 767px){
+                            margin-right: 5px;
+                            height: 20px;
+                        }
+                    } 
+                    span{
+                        max-width: 320px;
+                        font-size: 14px;
+                        color: #798a95;
+                        display: inline-block;
+                        vertical-align: middle;
+                        line-height: 20px;
+                        @media screen and (max-width: 767px){
+                            font-size: 12px;
+                        }
+                        &.company-name{
+                            color: #485862;
+                            font-family: $proxima-novasemibold;
+                        }
+                        &.accepted{
+                            color: #4a9e7a;
+                        }
+                        &.time{
+                            font-size: 12px;
+                            color: #b8b8b8;
+                            @media screen and (max-width: 767px){
+                                font-size: 10px;
+                            }
+                        }
+                        &.rejected{
+                            color: #e57c65;
+                        }
+                        &.see-all{
+                            color: #2e78b9;
+                            font-family: $proxima-novasemibold;
+                            font-size: 13px;
+                            @media screen and (max-width: 767px){
+                                font-size: 11px; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .new-abs-pos{
+            left: -150px;
+            .triangle{
+                right: 20px;
+            }
+        }
+    }  
+}

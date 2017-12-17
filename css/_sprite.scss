@@ -1,0 +1,73 @@
+.sprite {
+    background: url(../images/sprites.png);
+    display: inline-block;
+    vertical-align:middle;
+    &.call {
+        background-position: -5px -4px;
+        width: 17px;
+        height: 19px;
+    }
+    &.search {
+        background-position: -25px -3px;
+        width: 23px;
+        height: 23px;
+        @media screen and (max-width: 767px){
+            background-size: 200px;
+            width: 18px;
+            height: 18px;
+            background-position: -19px -2px;
+        }
+    }
+    &.left-arr {
+        background-position: -54px -3px;
+        width: 41px;
+        height: 41px;
+    }
+    &.right-arr {
+        background-position: -99px -4px;
+        width: 41px;
+        height: 41px;
+    }
+    &.fb {
+        background-position: -145px -4px;
+        width: 15px;
+        height: 20px;
+    }
+    &.tweet {
+        background-position: -165px -4px;
+        width: 18px;
+        height: 20px;
+    }
+    &.linkedin {
+        background-position: -189px -4px;
+        width: 15px;
+        height: 20px;
+    }
+    &.gplus {
+        background-position: -210px -4px;
+        width: 25px;
+        height: 20px;
+    }
+    &.fwhite {
+        background-position: -1px -57px;
+        width: 20px;
+        height: 22px;
+        margin-right: 40px;
+    }
+    &.gwhite {
+        background-position: -24px -57px;
+        width: 35px;
+        height: 22px;
+        margin-right: 25px;
+    }
+    &.search-blue {
+        background-position: -60px -59px;
+        width: 19px;
+        height: 18px;
+    }
+    &.noti-ico {
+        background-position: -85px -59px;
+        width: 19px;
+        height: 18px;
+    }
+}

@@ -1,0 +1,172 @@
+@media screen and (max-width: 1024px) {
+    .carousel-holder {
+        max-width: 900px;
+        margin: 0 auto;
+        &.margin-minus {
+            margin: -40px auto 0;
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    .section-sixth .scholfin-team-holder .scholfin-team .details-holder .social-icons {
+        position: relative;
+        top: -15px;
+        right: 0;
+    }
+    .section-sixth .scholfin-team-holder .scholfin-team .details-holder {
+        min-height: 340px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .col-sm-offset-3 {
+        margin-top: 30px;
+    }
+    .profile-settings .signed-in-name h2.headings {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-holder {
+        padding: 0px 20px;
+        max-width: 600px;
+        &.margin-minus {
+            margin: -40px auto 0;
+        }
+    }
+    .section-four {
+        .view-all {
+            padding-top: 10px;
+        }
+    }
+    .owl-pagination {
+        .owl-page {
+            &:nth-of-type(1n+6) {
+                display: none !important;
+            }
+        }
+    }
+    .right-side {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .view-all {
+        padding-top: 10px;
+    }
+    .seventh-section {
+        padding: 20px 0px;
+    }
+    section.digi-locker-section.border-bottom {
+        padding: 0px 20px;
+    }
+    div#bs-example-navbar-collapse-1 {
+        box-shadow: none;
+        border-top: 1px solid #4f565a;
+        margin-top: 10px;
+    }
+    .right-side {
+        margin-top: 15px;
+    }
+    .pad-0-xs {
+        padding-left: 0px;
+    }
+    .fixed-for-bottom-btn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff !important;
+        padding: 15px !important;
+        margin: 0px !important;
+        text-align: center !important;
+        a {
+            display: inline-block !important;
+            width: 49%;
+            padding: 12px 10px;
+            margin: 0px !important;
+            vertical-align: middle;
+        }
+    }
+    .scholarship-details .carousel-holder a.next1,
+    .scholarship-details .carousel-holder a.next3,
+    .scholarship-details .carousel-holder a.next4 {
+        right: -260px;
+    }
+    .panel-title {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .scholarship-box {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    .customNavigation {
+        width: 100%;
+    }
+    .carousel-holder a.prev1,
+    .carousel-holder a.prev3,
+    .carousel-holder a.prev4 {
+        left: 0px;
+    }
+    .carousel-holder a.next1,
+    .carousel-holder a.next3,
+    .carousel-holder a.next4 {
+        right: 40px;
+    }
+    .awards-holder {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    .scholfin-team {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .section-three .how-it-works li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0px;
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+    .testimonial-holder {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    .cover-photo-holder .cover-pic-div .overlay-div .inline-block {
+        margin: 0 auto;
+    }
+    .section-sixth.no-bg .content-holder .rest-of-the-team .image-holder img {
+        margin: 0 auto;
+    }
+    .aboutus-page {
+        .scholfin-team {
+            max-width: 66%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-holder {
+        padding: 0px 20px;
+        max-width: 280px;
+        &.margin-minus {
+            margin: -40px auto 0;
+        }
+    }
+    .applied-scholarship .first-holder .headings {
+        line-height: 34px;
+    }
+    .applied-scholarship .first-holder .white-btn {
+        padding: 5px 8px;
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,78 @@
+header {
+    padding: 10px 0px;
+    background-color: $dark-blue;
+    .navbar {
+        min-height: 30px;
+        margin-bottom: 0px;
+        .navbar-brand {
+            padding: 0px 15px;
+            height: auto;
+        }
+        li {
+            a {
+                font-size: $small+1;
+                text-transform: uppercase;
+                border-radius: 4px;
+                line-height: 10px;
+                color: $white;
+                &.blue {
+                    color: $blue;
+                }
+                &:hover,
+                &:focus,
+                &:active {
+                    background-color: transparent;
+                    text-decoration: none;
+                    color: #ecca00;
+                }
+                &.blue-btn {
+                    background-color: #ecca00;
+                    color: #000;
+                    padding: 15px 20px;
+                    &:hover {
+                        background-color: darken(#ecca00, 5%);
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+                &.call-btn {
+                    padding: 9px 10px;
+                    border: 1px solid #363e43;
+                    margin: 0px 10px;
+                }
+            }
+            &.active {
+                a {
+                    color: #ecca00;
+                }
+            }
+            &.call-li {
+                .triangle-holder {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 20px;
+                    top: -13px;
+                }
+                &:hover {
+                    #call-div,
+                    .call-div {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.yellow-color-btn {
+    background-color: #ecca00 !important;
+    color: #000 !important;
+    padding: 15px 20px !important;
+    border-color: #ecca00 !important;
+    &:hover {
+        background-color: darken(#ecca00, 5%) !important;
+        color: #000 !important;
+        text-decoration: none !important;
+    }
+}

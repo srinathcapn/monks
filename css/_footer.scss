@@ -1,0 +1,67 @@
+footer {
+    background-color: #fff;
+    .footer-links {
+        padding: 20px 0px 50px;
+        &.less-padding {
+            padding: 30px 0px;
+        }
+        @media (min-width: 993px) and (max-width: 1024px) {
+            padding: 20px 0px;
+        }
+        text-align:left;
+        li {
+            display: inline-block;
+            padding-right: 20px;
+            a {
+                font-size: 13px;
+                color: #798a95;
+                &:focus,
+                &:hover {
+                    color: #0086bf;
+                }
+            }
+            &.floatr {
+                float: right;
+                font-size: 13px;
+                color: #798a95;
+                a {
+                    color: #14aeea;
+                }
+                @media screen and (max-width: 767px) {
+                    font-size: 11px;
+                }
+            }
+        }
+        @media screen and (max-width: 992px) {
+            padding: 30px 0px;
+            li {
+                width: 24%;
+                text-align: center;
+                &.floatr {
+                    float: none;
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                    padding-top: 20px;
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            li {
+                width: auto;
+                padding-right: 10px;
+                a {
+                    font-size: 11px;
+                }
+                &.floatr {
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+ul.social-icons {
+    padding-top: 20px;
+}
