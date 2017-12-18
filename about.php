@@ -5,7 +5,7 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
     <link href="plugins/fancybox/css/jquery.fancybox.css" rel="stylesheet">
     <link href="font/proxima/stylesheet.css" rel="stylesheet">
-    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="32x32">
+    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="32x32">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <script src="/c-panel/js/custom.js"></script>
 

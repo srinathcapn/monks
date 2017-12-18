@@ -15,7 +15,7 @@ $display_past_events = display_all_past_events();
     <link href="plugins/fancybox/css/jquery.fancybox.css" rel="stylesheet">
     <link href="plugins/animate/css/animate.css" rel="stylesheet">
     <link href="font/proxima/stylesheet.css" rel="stylesheet">
-    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="32x32">
+    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="32x32">
     <meta name="theme-color" content="#0086bf" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>Monks on wheels</title>

@@ -22,7 +22,7 @@ if(empty($display_events)){
     <link href="/plugins/fancybox/css/jquery.fancybox.css" rel="stylesheet">
     <link href="/plugins/owl-carousel/css/owl.carousel.css" rel="stylesheet">
     <link href="/plugins/owl-carousel/css/owl.theme.css" rel="stylesheet">
-    <link rel="icon" href="/img/favicon.png" type="image/gif" sizes="32x32">
+    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="32x32">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <title>MOW</title>
 </head>
