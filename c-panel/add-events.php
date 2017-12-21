@@ -95,8 +95,8 @@ if (isset($_POST['submit'])) {
     $temptimestr2 = strtotime($to_date);
     $temp_date2 = date('Y-m-d', $temptimestr2);
 
-    $data['fields'] = array('title', 'cost', 'from_date', 'to_date', 'aboutthatplace', 'keyhighlights', 'contact', 'event_image', 'seo_title', 'seo_url', 'seo_image', 'seo_imgtitle', 'seo_description', 'create_date', 'slug');
-    $data['details'] = array($title, $cost, $temp_date1, $temp_date2, $about, $keyhigh, $cont, $event_pic, $seo_title, $seo_url, $seo_image, $seo_imgtitle, $seo_description, date('Y-m-d H:i:s'), $slug_value);
+    $data['fields'] = array('title', 'cost', 'from_date', 'to_date', 'aboutthatplace', 'keyhighlights', 'contact', 'event_image', 'seo_title', 'seo_url', 'seo_image', 'seo_imgtitle', 'seo_description', 'create_date', 'slug','link');
+    $data['details'] = array($title, $cost, $temp_date1, $temp_date2, $about, $keyhigh, $cont, $event_pic, $seo_title, $seo_url, $seo_image, $seo_imgtitle, $seo_description, date('Y-m-d H:i:s'), $slug_value,$link);
     $data['edit_id'] = array($edit_id);
     $data['condition'] = ' WHERE `event_id`="' . $edit_id . '"';
     $result = insert_update_data($data);
@@ -237,6 +237,16 @@ else echo 0; ?>" />
                             ?></textarea>
                     </div>
                 </div>
+
+                 <div class="form-group">
+                        <h5>Booking link</h5>
+                        <input type="text" placeholder="Link" id="link" name="link" class="form-control checksco" value="<?php
+                            if (isset($link))
+                                echo $link;
+                            else
+                                echo '';
+                            ?>">
+                    </div>
             </div>
 
             <div class="browse toselect">
@@ -259,6 +269,8 @@ else echo 0; ?>" />
                                 echo '';
                             ?>">
                     </div>
+
+
                 </div>
                 <h5>Event Image</h5>
                 <a name="file_browse" >
@@ -271,7 +283,11 @@ else echo 0; ?>" />
                             } else {
                                 echo 'img/brose-doc-img.png';
                             } ?>"/> -->
+
+
+                    
             </div>
+
             <div class="buttons pull-right">
                 <a><input class="save-publish" type="submit" name="submit" value="Save" /></a>
                 <a href="welcome-admin.php"><input class="save" type="button" onClick="CKcancel('subs_blog');" value="Cancel" /></a>

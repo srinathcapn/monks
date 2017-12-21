@@ -136,7 +136,7 @@ src="https://www.facebook.com/tr?id=867111826804660&ev=PageView
                                     <p>&#8377; <?php echo $display_events[0]['cost']; ?>/-* per head</p>
                                 </li>
                                 <li class="fixed-for-bottom-btn">
-                                    <a class="blue-small-btn yellow-color-btn" href="https://www.eventshigh.com/bangalore/monks+on+wheels">Book Now</a>
+                                    <a class="blue-small-btn yellow-color-btn" href="<?php echo $display_events[0]['link']; ?>">Book Now</a>
                                 </li>
                             </ul>
                         </div>
